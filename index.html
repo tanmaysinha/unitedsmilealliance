@@ -7,10 +7,15 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="font-sans">
-  <header class="bg-blue-500 text-white p-6 text-center">
-    <h1 class="text-3xl font-bold">Paradise Dental</h1>
-    <p class="mt-2">[Tagline or Mission Statement]</p>
-    <a href="[Booking Link]" class="mt-4 inline-block bg-white text-blue-500 font-semibold py-2 px-4 rounded">Book an Appointment</a>
+  <header class="flex items-center justify-between bg-white p-6 shadow">
+    <div class="flex items-center">
+      <img src="[Logo URL]" alt="Logo" class="h-10 w-auto">
+    </div>
+    <nav class="flex items-center space-x-6">
+      <a href="#contact" class="text-gray-700 hover:text-blue-500 font-semibold">Contact</a>
+      <a href="#dentist" class="text-gray-700 hover:text-blue-500 font-semibold">Dentist</a>
+      <a href="[Booking Link]" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">Book Appointment</a>
+    </nav>
   </header>
 
   <section class="p-6 text-center">
@@ -23,7 +28,7 @@
     </div>
   </section>
 
-  <section class="p-6 bg-gray-100 text-center">
+  <section id="dentist" class="p-6 bg-gray-100 text-center">
     <h2 class="text-2xl font-semibold mb-4">Meet Our Dentist</h2>
     <img src="[Dentist Photo]" alt="Dentist Photo" class="w-40 h-40 rounded-full mx-auto mb-4">
     <p class="max-w-xl mx-auto">[Brief bio of the dentist including experience, education, and philosophy]</p>
@@ -34,11 +39,12 @@
     <p class="max-w-2xl mx-auto">[List or brief description of accepted insurance plans]</p>
   </section>
 
-  <footer class="p-6 bg-blue-500 text-white text-center">
-    <h2 class="text-xl font-semibold mb-2">Visit Us</h2>
-    <p>[Practice Address]</p>
-    <p>[Phone Number]</p>
-    <p><a href="[Google Maps Link]" class="underline">Get Directions</a></p>
+  <div class="p-6 text-center">
+    <a href="[Booking Link]" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">Book Appointment</a>
+  </div>
+
+  <footer class="p-4 bg-gray-100 text-center text-sm text-gray-600">
+    &copy; United Smile Alliance. All Rights Reserved.
   </footer>
 </body>
 </html>
