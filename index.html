@@ -15,11 +15,11 @@
 <body class="font-sans">
   <header class="flex items-center justify-between bg-white p-6 shadow">
     <div class="flex items-center">
-      <img src="assets/images/usa_logo.png" alt="Logo" class="h-12 w-auto">
+      <a href="#"><img src="assets/images/usa_logo.png" alt="Logo" class="h-12 w-auto"></a>
     </div>
     <nav class="hidden md:flex items-center space-x-6">
-      <a href="#dentist" class="text-gray-700 hover:text-blue-500 font-semibold">Dentist</a>
-      <a href="#contact" class="text-gray-700 hover:text-blue-500 font-semibold">Contact</a>
+      <a href="#locations" class="text-gray-700 hover:text-blue-500 font-semibold">Our Locations</a>
+      <a href="mailto:tanmay@unitedsmilealliance.com" class="text-gray-700 hover:text-blue-500 font-semibold">Contact</a>
     </nav>
     <div class="md:hidden">
       <button onclick="toggleMenu()" class="focus:outline-none">
@@ -31,8 +31,8 @@
   </header>
 
   <div id="mobile-menu" class="hidden md:hidden bg-white shadow p-4 space-y-4 text-center">
-    <a href="#dentist" class="block text-gray-700 hover:text-blue-500 font-semibold">Dentist</a>
-    <a href="#contact" class="block text-gray-700 hover:text-blue-500 font-semibold">Contact</a>
+    <a href="#locations" class="block text-gray-700 hover:text-blue-500 font-semibold">Our Locations</a>
+    <a href="mailto:tanmay@unitedsmilealliance.com" class="block text-gray-700 hover:text-blue-500 font-semibold">Contact</a>
   </div>
 
   <section class="flex flex-col items-center justify-center text-center min-h-screen p-6">
@@ -42,10 +42,24 @@
     </p>
   </section>
 
-  <section id="dentist" class="p-6 bg-gray-100 text-center">
-    <h2 class="text-2xl font-semibold mb-4">Meet Our Dentist</h2>
-    <img src="assets/images/dentist.jpeg" alt="Dentist Photo" class="w-40 h-40 rounded-full mx-auto mb-4">
-    <p class="max-w-xl mx-auto">Dr. Garima Sinha is a graduate of University of Pittsburgh and internship from University of Pennsylvania in Oral and Maxillofacial Surgery. She has been practicing dentistry for more than a decade.</p>
+  <section id="locations" class="p-10 bg-gray-100 text-center">
+    <h2 class="text-2xl font-semibold mb-8">Our Locations</h2>
+    <div class="flex flex-col md:flex-row gap-6 justify-center max-w-3xl mx-auto">
+      <div class="bg-white rounded-xl shadow p-6 flex-1 text-left">
+        <h3 class="text-xl font-bold text-blue-700 mb-3"><a href="https://www.dentalparadisefamily.com" target="_blank" class="hover:underline">Paradise Dental</a></h3>
+        <p class="text-gray-700 mb-1">2338 N Front St</p>
+        <p class="text-gray-700 mb-4">Philadelphia, PA 19133</p>
+        <p class="text-gray-700 mb-1"><span class="font-semibold">Phone:</span> <a href="tel:2678869474" class="text-blue-500 hover:underline">267-886-9474</a></p>
+        <p class="text-gray-700 mt-2"><span class="font-semibold">Website:</span> <a href="https://www.dentalparadisefamily.com" target="_blank" class="text-blue-500 hover:underline">www.dentalparadisefamily.com</a></p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6 flex-1 text-left">
+        <h3 class="text-xl font-bold text-blue-700 mb-3"><a href="https://www.secanedental.com" target="_blank" class="hover:underline">Secane Dental</a></h3>
+        <p class="text-gray-700 mb-1">600 Ashland Ave</p>
+        <p class="text-gray-700 mb-4">Secane, PA 19018</p>
+        <p class="text-gray-700 mb-1"><span class="font-semibold">Phone:</span> <a href="tel:6102376848" class="text-blue-500 hover:underline">610-237-6848</a></p>
+        <p class="text-gray-700 mt-2"><span class="font-semibold">Website:</span> <a href="https://www.secanedental.com" target="_blank" class="text-blue-500 hover:underline">www.secanedental.com</a></p>
+      </div>
+    </div>
   </section>
 
   <footer class="p-4 bg-gray-100 text-center text-sm text-gray-600">
